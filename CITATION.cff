@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the 2025 paper associated with this repository."
+title: "RdS 2025: SPOD and boundary-layer scale interaction"
+type: software
+version: 0.1.0
+repository-code: "https://github.com/haoran-du/rds-2025-spod"
+authors:
+  - family-names: Du
+    given-names: Haoran
+references:
+  - type: article
+    title: "Investigation of Boundary Layer Scale Interactions Over Realistic Morphology Influenced by An Upstream Tall Building Using the SPOD Method"
+    authors:
+      - family-names: Du
+        given-names: Haoran
+      - family-names: Perret
+        given-names: Laurent
+      - family-names: Savory
+        given-names: Eric
+    year: 2025
+    doi: 10.1007/s10546-025-00922-z

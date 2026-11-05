@@ -1,0 +1,146 @@
+[
+  {
+    "path_relative_to_DATA": "PREPROCESSING/RdS_PIV_YZ/RdS_PIV_YZ_INSTANT_PREPROCESSING.m",
+    "sha256": "02c7cd467edd5cbc616b51165d5497827e9b0eff9c140d884276be211ea4d273",
+    "lines": 73,
+    "candidate_group": "2023_statistics_or_shared_preprocessing",
+    "third_party_review_flag": false,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "POSTPROCESSING/2024_SPOD_ALLTOGETHER/SPOD_ALLTOGETHER.m",
+    "sha256": "98911cb16a52f89890aa143e1d8d8b1a7e4978be16e9ea7cb5b6e9a4221b7a99",
+    "lines": 1443,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "POSTPROCESSING/2024_SPOD_ALLTOGETHER/customcolormap.m",
+    "sha256": "1ffce05f72287cf183475d0dd3b85901595753956cb992114ead1c80614a42bb",
+    "lines": 146,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": false,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "POSTPROCESSING/2024_SPOD_LSE/RdS_SPODLSE_YZpredictionforXZ.m",
+    "sha256": "07bfcfb5abaf6fad11f377563a6a6d773e836a402a567ea556df7a3be17ed95f",
+    "lines": 821,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "POSTPROCESSING/2024_SPOD_LSE/RdS_SPODLSE_validationXZ.m",
+    "sha256": "b9b079bbc6108e8cffd69f6bb1d69447debe415faec5eec25dcb59274286e7e2",
+    "lines": 97,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": false,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "POSTPROCESSING/2024_SPOD_LSE/customcolormap.m",
+    "sha256": "1ffce05f72287cf183475d0dd3b85901595753956cb992114ead1c80614a42bb",
+    "lines": 146,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": false,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD.m",
+    "sha256": "a58c414a6bfd6d15dfe17811edc5bb18a5820ad4b501d1e689a9b7af5cae0f59",
+    "lines": 410,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_LSE_2024.m",
+    "sha256": "8ae0a5d468f1ba79e3d5eb269e53048f867ec2734f4c64c55f792da39f554ac6",
+    "lines": 863,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_LSE_2024_SC_BL_prediction.m",
+    "sha256": "aaa0051bfe89c4a365933d4b1a3db63af939d4d129a4d430ba504944f85ec617",
+    "lines": 920,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_LSE_2024_copy0.m",
+    "sha256": "8ae0a5d468f1ba79e3d5eb269e53048f867ec2734f4c64c55f792da39f554ac6",
+    "lines": 863,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_LSE_2024_copy1.m",
+    "sha256": "725f270918fe78ae770d94f84b97b2deabe51652100e4bced5288f0c36a7603f",
+    "lines": 773,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_LSE_2024_copy2.m",
+    "sha256": "94a6205fafc6839ff38fccf65481d85f23e3080c014f6f5181ebc268e3eb7439",
+    "lines": 1090,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_LSE_2024_copy3.m",
+    "sha256": "f1be630cdd50e9ae1051d15ccf2d77f335e22ad7076df44ea7d07ce4e1978e92",
+    "lines": 875,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPOD_application_example.m",
+    "sha256": "35222f7024ae490249889696643f8a3b059330ab40fb1da536cdb5aef2fe09e8",
+    "lines": 59,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": false,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/SPODpost.m",
+    "sha256": "502f9cd98f058930be3dd2f04da5b41f97b1ebc25f99f50e72a01c5c1c9f6d62",
+    "lines": 78,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": true,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  },
+  {
+    "path_relative_to_DATA": "2024_SPOD/customcolormap.m",
+    "sha256": "1ffce05f72287cf183475d0dd3b85901595753956cb992114ead1c80614a42bb",
+    "lines": 146,
+    "candidate_group": "2025_SPOD_and_related_LSE_exploration",
+    "third_party_review_flag": false,
+    "status": "archived unchanged; candidate classification is not proof of use in final publication",
+    "association": "candidate source or supporting variant; not proof of final figure use"
+  }
+]

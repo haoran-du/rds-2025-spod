@@ -1,0 +1,37 @@
+{
+  "source_repository": "https://github.com/haoran-du/rds-street-canyon-reproducibility",
+  "source_commit": "2bd418759368bdb305697ea354e62e99f257242f",
+  "verification": "AST comparison: computational functions/classes unchanged; imports, package names and CLI intentionally separated",
+  "checks": [
+    {
+      "source": "src/rds/paper2025.py",
+      "destination": "src/rds2025/analysis.py",
+      "source_sha256": "2b5c0931464acd2c69ea25dcbdc3312057926ab6fcb9b34404725f8259188edf",
+      "unchanged_function_or_class_bodies": [
+        "recover_spod"
+      ]
+    },
+    {
+      "source": "src/rds/io.py",
+      "destination": "src/rds2025/io.py",
+      "source_sha256": "2bbf329356acf26cd9e87633a9eec96ef14793891acdcd2f69484aa7ab64e4c1",
+      "unchanged_function_or_class_bodies": [
+        "one_mat",
+        "instantaneous_mat"
+      ]
+    },
+    {
+      "source": "src/rds/decomposition.py",
+      "destination": "src/rds2025/decomposition.py",
+      "source_sha256": "df8397b535cca1a3233efd5ad2e8eefa9b4c9dc76ed699666c3bf7fa91e2479e",
+      "unchanged_function_or_class_bodies": [
+        "Decomposition",
+        "gaussian_weights",
+        "diagonal_filter",
+        "spod",
+        "pod",
+        "third_order_split"
+      ]
+    }
+  ]
+}
