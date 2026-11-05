@@ -1,60 +1,91 @@
-RdS 2025: SPOD and boundary-layer scale interaction
-==================================================
+Investigation of Boundary Layer Scale Interactions Over Realistic Morphology Influenced by An Upstream Tall Building Using the SPOD Method
+==========================================================================================================================================
 
-Independent Python tools for Du, Perret & Savory (2025), Boundary-Layer
-Meteorology, https://doi.org/10.1007/s10546-025-00922-z.
-No MATLAB runtime or installation of another RdS repository is required.
+Authors: Haoran Du, Laurent Perret, and Eric Savory
 
-Install and run
+Affiliations:
+
+* Haoran Du and Eric Savory: Department of Mechanical and Materials Engineering,
+  University of Western Ontario, London, Ontario, Canada.
+* Laurent Perret: Nantes Universite, Ecole Centrale de Nantes, CNRS, LHEEA,
+  UMR 6598, Nantes, France.
+
+Corresponding author: Haoran Du, hdu59@uwo.ca
+
+Published in Boundary-Layer Meteorology (2025).
+Article: https://doi.org/10.1007/s10546-025-00922-z
+
+Code Repository
 ---------------
 
-From this repository directory, with Python 3.10 or newer::
+This repository contains Python routines for the SPOD analysis of flow
+over the Rue des Suisses (RdS) morphology. It includes the correlation-filtered
+SPOD formulation used in the study and routines for reading saved modal
+results and plotting their energy distributions and temporal coefficients.
+
+This is a code-only release. Experimental data, processed arrays and
+generated figures are supplied or produced separately.
+
+Repository layout
+-----------------
+
+* ``src/rds2025/analysis.py``: recovery and plotting of saved POD/SPOD results.
+* ``src/rds2025/decomposition.py``: POD, correlation-filtered SPOD and third-order moments.
+* ``src/rds2025/io.py``: measurement-file readers and array conventions.
+* ``data/README.rst``: expected inputs and directory layout.
+* ``tests/``: automated tests for the Python routines.
+* ``docs/``: implementation and processing notes.
+
+Setup
+-----
+
+Use Python 3.10 or later. From the repository directory::
 
     python -m venv .venv
-    # Linux/macOS: source .venv/bin/activate
-    # Windows PowerShell: .venv\Scripts\Activate.ps1
-    python -m pip install -e ".[test]"
-    python -m pytest -q
-    rds2025 recover --data-root "/path/to/DATA" --output outputs/spod
-    rds2025 recover --data-root "/path/to/DATA" --output outputs/spod_verified --verify-projection
 
-``python -m rds2025.cli`` is an equivalent entry point. Inputs remain
-external and read-only, in their original DATA directory layout.
+Activate the environment on Linux/macOS::
 
-Scope and limitations
----------------------
+    source .venv/bin/activate
 
-This implements Sieber-type correlation-filtered SPOD, not frequency-domain
-Welch SPOD. The kernel exposes normalization, spatial weights, Gaussian
-filter width, temporal boundary conditions, centering and a memory guard.
-Small synthetic tests verify the mathematics; they are not a full-data
-9995-by-9995 eigensolve.
+Or in Windows PowerShell::
 
-The recovery workflow selectively reads saved eigenvalues and the first
-12 coefficient histories from large HDF5 MAT cells. It regenerates energy
-curves and phase portraits corresponding to Figs. 5–6. Optional projection
-checks use raw YZ fields, demeaning all 19994 frames before selecting the
-9995 analysis frames, and verify zero-lag spatial modes in all five cases.
+    .\.venv\Scripts\Activate.ps1
 
-The retained full-projection baseline contains 39 passes and one failed
-POD-label check: the 2b file named POD embeds a nonzero SPOD filter width.
-That file is explicitly excluded from the ordinary-POD comparison. The
-command returns status 1 for this known inconsistency; it does not silently
-turn the check green. See ``docs/AUDIT_FINDINGS.rst``.
+Then install the package::
 
-The complete eigensolve, time-lagged modes and all later scale-interaction
-figures have not yet been independently recomputed. No claim of complete
-paper reproduction is made. See ``docs/SPLIT_VERIFICATION.rst`` for tests
-performed after repository extraction.
+    python -m pip install -e .
 
-Contents and provenance
------------------------
+Run order
+---------
 
-``src/rds2025`` contains only this paper's recovery workflow, POD/SPOD and
-third-order kernels, and local helpers. It does not import the 2023
-statistics pipeline or the 2024 LSE package. CI uses synthetic tests.
+1. Obtain the external POD/SPOD results listed in ``data/README.rst``.
+   Keep their original directory layout.
+2. Recover the saved modal energy distributions and phase portraits::
 
-The local ``archive/matlab`` preserves the associated MATLAB source and
-development variants, including original attribution. Only its hash index
-is public; arrays, MATLAB originals and publisher PDFs are excluded.
-See ``THIRD_PARTY.rst`` and ``CITATION.cff``.
+       rds2025 recover --data-root "/path/to/DATA" --output outputs/spod
+
+3. If the original YZ velocity fields are available, the zero-lag spatial
+   projections can also be recomputed::
+
+       rds2025 recover --data-root "/path/to/DATA" --output outputs/spod_projection --verify-projection
+
+All generated files are written to the selected output directory. ``outputs/``
+is ignored by Git. ``python -m rds2025.cli`` is an alternative to ``rds2025``.
+
+Processing scope
+----------------
+
+SPOD here denotes the correlation-filtered formulation, not frequency-domain
+Welch SPOD. The recovery workflow reads saved eigenpairs and the first twelve
+coefficient histories to generate the plots corresponding to Figs. 5–6.
+
+The full experimental-data eigensolve, time-lagged spatial modes and later
+scale-interaction figures are not yet included in the recovery workflow.
+Implementation details are provided in ``docs/``.
+
+Data and citation
+-----------------
+
+Input files are external to this repository; their expected layout is given
+in ``data/README.rst``. Please cite the article linked above when using this
+code. Citation metadata are also provided in ``CITATION.cff``.
